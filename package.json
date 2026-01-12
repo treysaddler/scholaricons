@@ -1,0 +1,23 @@
+{
+  "name": "scholaricons",
+  "version": "1.0.0",
+  "description": "Scholaricons is a specialist icon font for academics. It contains icons for tools, websites, and organisations related to academia that are often missing from mainstream font packages. It can be used by itself, but its primary purpose is to be used as a supplementary package alongside a larger icon set. Go to [GitHub Pages](http://treysaddler.github.io/scholaricons) to view the full icon set along with instructions for their use.",
+  "main": "css/scholaricons.css",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treysaddler/scholaricons.git"
+  },
+  "keywords": [],
+  "author": "Trey Saddler",
+  "license": "OFL-1.1",
+  "bugs": {
+    "url": "https://github.com/treysaddler/scholaricons/issues"
+  },
+  "homepage": "https://treysaddler.github.io/scholaricons/"
+}

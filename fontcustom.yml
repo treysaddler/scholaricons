@@ -1,0 +1,31 @@
+# -------------------------------------------------------------------
+# Scholaricons FontCustom Configuration
+# -------------------------------------------------------------------
+
+# 1. Source and Output Directories
+input:
+  vectors: svg/monochrome
+
+output:
+  fonts: fonts/
+  css: css/
+  preview: preview/
+
+# 2. Font Settings
+font_name: scholaricons
+font_design_units: 512
+font_ascent: 448
+font_descent: 64
+
+# 3. CSS Settings
+# Classes will be .sci-google-scholar
+css_selector: .sci-{{glyph}}
+css_prefix: sci
+
+# 4. File Formats
+templates: [ css, preview ]
+font_formats: [ woff2, woff, ttf, eot, svg ]
+
+# 5. Advanced Options
+autowidth: false
+no_hash: true
