@@ -1,8 +1,8 @@
 {
-  "name": "academicons",
-  "version": "1.9.5",
-  "description": "Academicons is a specialist icon font for academics. It contains icons for websites and organisations related to academia that are often missing from mainstream font packages. It can be used by itself, but its primary purpose is to be used as a supplementary package alongside a larger icon set. Go [here](http://jpswalsh.github.io/academicons) to view the full icon set along with instructions for their use.",
-  "main": "css/academicons.css",
+  "name": "scholaricons",
+  "version": "1.0.0",
+  "description": "Scholaricons is a specialist icon font for academics. It contains icons for tools, websites, and organisations related to academia that are often missing from mainstream font packages. It can be used by itself, but its primary purpose is to be used as a supplementary package alongside a larger icon set. Go to [GitHub Pages](http://treysaddler.github.io/scholaricons) to view the full icon set along with instructions for their use.",
+  "main": "css/scholaricons.css",
   "directories": {
     "doc": "docs"
   },
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jpswalsh/academicons.git"
+    "url": "git+https://github.com/treysaddler/scholaricons.git"
   },
   "keywords": [],
-  "author": "James Walsh",
+  "author": "Trey Saddler",
   "license": "OFL-1.1",
   "bugs": {
-    "url": "https://github.com/jpswalsh/academicons/issues"
+    "url": "https://github.com/treysaddler/scholaricons/issues"
   },
-  "homepage": "https://jpswalsh.github.io/academicons/"
+  "homepage": "https://treysaddler.github.io/scholaricons/"
 }
