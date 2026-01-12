@@ -11,6 +11,10 @@ website:
         text: Home
       - href: icons.qmd
         text: Icons
+      - href: requested.qmd
+        text: Requested
+      - href: removed.qmd
+        text: Removed
     right:
       - icon: github
         href: https://github.com/treysaddler/scholaricons
