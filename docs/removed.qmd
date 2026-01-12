@@ -1,0 +1,11 @@
+---
+title: "Removed Icons"
+---
+
+These are icons that have been removed, usually due to deprecation.
+
+- **Name:** Acclaim
+  - **Pearson Launch (2014):** Pearson created Acclaim as an enterprise-class badging platform based on the Mozilla Open Badges standard. It was designed to provide a "verifiable, data-rich" way to share academic and professional achievements online.
+  - **Credly Merger:** In 2018, Credly (another major digital credential provider) acquired the Acclaim platform from Pearson. For several years, the service was rebranded as "Acclaim by Credly."
+  - **Full Integration:** Today, the Acclaim platform has been fully integrated into the Credly brand.
+
