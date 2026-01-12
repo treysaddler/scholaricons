@@ -7,6 +7,20 @@
     "text": "These are icons that have been removed, usually due to deprecation.\n\nName: Acclaim\n\nPearson Launch (2014): Pearson created Acclaim as an enterprise-class badging platform based on the Mozilla Open Badges standard. It was designed to provide a “verifiable, data-rich” way to share academic and professional achievements online.\nCredly Merger: In 2018, Credly (another major digital credential provider) acquired the Acclaim platform from Pearson. For several years, the service was rebranded as “Acclaim by Credly.”\nFull Integration: Today, the Acclaim platform has been fully integrated into the Credly brand."
   },
   {
+    "objectID": "requested.html",
+    "href": "requested.html",
+    "title": "Requested Icons",
+    "section": "",
+    "text": "These are icons that have been requested."
+  },
+  {
+    "objectID": "requested.html#additional-work-required",
+    "href": "requested.html#additional-work-required",
+    "title": "Requested Icons",
+    "section": "Additional Work Required",
+    "text": "Additional Work Required\n\nName: OSF Preregistered+\n\nOrganization: \nWebsite: \nDescription:\nNotes: https://osf.io/tvyxz/ All the icons are in an EPS file at https://osf.io/5fghy, including some Preregistered+ variants such as Preregistered+ TC. However, Preregistered+ alone is not in the EPS file. Bitmaps are available at https://osf.io/t5nuj and https://osf.io/2qcpx.\n\nhttps://github.com/jpswalsh/academicons/issues/221\n\n\nName: medRxiv\n\nOrganization: \nWebsite: medRxiv\nDescription: Preprint server (sister service to bioRxiv) for health sciences.\nNotes: No SVG found, might need to convert\n\nhttps://github.com/jpswalsh/academicons/issues/224\n\n\nName: EndNote\n\nOrganization: Clarivate\nWebsite: EndNote Homepage\nDescription: EndNote is a paid citation manager from Clarivate.\nNotes: https://github.com/jpswalsh/academicons/issues/250\n\nNo SVG found, might need to convert\n\n\n\nName: Credly\n\nOrganization: \nWebsite: Credly Acclaim\nDescription:\nNotes: Need to find the SVG"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Scholaricons",
@@ -75,20 +89,6 @@
     "title": "Scholaricons",
     "section": "Author",
     "text": "Author\n\nGitHub: https://github.com/treysaddler\nWeb: https://treysaddler.com"
-  },
-  {
-    "objectID": "requested.html",
-    "href": "requested.html",
-    "title": "Requested Icons",
-    "section": "",
-    "text": "These are icons that have been requested."
-  },
-  {
-    "objectID": "requested.html#additional-work-required",
-    "href": "requested.html#additional-work-required",
-    "title": "Requested Icons",
-    "section": "Additional Work Required",
-    "text": "Additional Work Required\n\nName: OSF Preregistered+\n\nOrganization: \nWebsite: \nDescription:\nNotes: https://osf.io/tvyxz/ All the icons are in an EPS file at https://osf.io/5fghy, including some Preregistered+ variants such as Preregistered+ TC. However, Preregistered+ alone is not in the EPS file. Bitmaps are available at https://osf.io/t5nuj and https://osf.io/2qcpx.\n\nhttps://github.com/jpswalsh/academicons/issues/221\n\n\nName: medRxiv\n\nOrganization: \nWebsite: medRxiv\nDescription: Preprint server (sister service to bioRxiv) for health sciences.\nNotes: No SVG found, might need to convert\n\nhttps://github.com/jpswalsh/academicons/issues/224\n\n\nName: EndNote\n\nOrganization: Clarivate\nWebsite: EndNote Homepage\nDescription: EndNote is a paid citation manager from Clarivate.\nNotes: https://github.com/jpswalsh/academicons/issues/250\n\nNo SVG found, might need to convert\n\n\n\nName: Credly\n\nOrganization: \nWebsite: Credly Acclaim\nDescription:\nNotes: Need to find the SVG"
   },
   {
     "objectID": "icons.html",
