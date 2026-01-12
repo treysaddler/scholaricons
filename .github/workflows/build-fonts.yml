@@ -15,7 +15,7 @@ jobs:
       - name: Install System Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y fontforge woff2 eot-utils
+          sudo apt-get install -y fontforge python3-fontforge woff2 eot-utils
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -35,7 +35,7 @@ jobs:
           find "$GEM_LIB_DIR" -name "*.rb" -print0 | xargs -0 sed -i 's/File.exists?/File.exist?/g'
 
       - name: Compile Fonts
-        run: fontcustom compile
+        run: fontcustom compile --debug
 
       - name: Install Minifier
         run: npm install -g clean-css-cli

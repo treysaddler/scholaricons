@@ -5,6 +5,7 @@ on:
     paths:
       - 'svg/**'
       - 'build-icons.js'
+      - '.github/workflows/build-iconify.yml' 
 jobs:
   build:
     runs-on: ubuntu-latest
