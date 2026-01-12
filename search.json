@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "removed.html",
+    "href": "removed.html",
+    "title": "Removed Icons",
+    "section": "",
+    "text": "These are icons that have been removed, usually due to deprecation.\n\nName: Acclaim\n\nPearson Launch (2014): Pearson created Acclaim as an enterprise-class badging platform based on the Mozilla Open Badges standard. It was designed to provide a “verifiable, data-rich” way to share academic and professional achievements online.\nCredly Merger: In 2018, Credly (another major digital credential provider) acquired the Acclaim platform from Pearson. For several years, the service was rebranded as “Acclaim by Credly.”\nFull Integration: Today, the Acclaim platform has been fully integrated into the Credly brand."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Scholaricons",
+    "section": "",
+    "text": "Academicons is a specialist icon font for academics. It contains icons for websites and organisations related to academia that are often missing from mainstream font packages. It can be used by itself, but its primary purpose is to be used as a supplementary package alongside a larger icon set.\nAll product names, logos, and brands are the property of their respective owners. Use of these names, logos, and brands does not imply endorsement."
+  },
+  {
+    "objectID": "index.html#what-is-scholaricons",
+    "href": "index.html#what-is-scholaricons",
+    "title": "Scholaricons",
+    "section": "",
+    "text": "Academicons is a specialist icon font for academics. It contains icons for websites and organisations related to academia that are often missing from mainstream font packages. It can be used by itself, but its primary purpose is to be used as a supplementary package alongside a larger icon set.\nAll product names, logos, and brands are the property of their respective owners. Use of these names, logos, and brands does not imply endorsement."
+  },
+  {
+    "objectID": "index.html#how-do-i-use-it",
+    "href": "index.html#how-do-i-use-it",
+    "title": "Scholaricons",
+    "section": "How do I use it?",
+    "text": "How do I use it?\n\nAlongside Font Awesome\nScholaricons was originally built as a supplement to Font Awesome 5, so the two fonts intentionally share the same metrics. You can style the icons using Font Awesome CSS controls.\nThere are two ways to install Scholaricons on your site. The most reliable way is to place the fonts and css folders on your server and link to the scholaricons.css stylesheet by adding the following to the page header:\n&lt;link rel=\"stylesheet\" href=\"/path/to/folder/css/scholaricons.min.css\"/&gt;\nAlternatively, use the jsdelivr CDN to call the most recent version of Scholaricons from the content distribution network.\n\n\nLoad Academicons v1 (latest release in the 1.x.x range; recommended):\n&lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/treysaddler/scholaricons@1/css/scholaricons.min.css\"&gt;\nOr get the latest version (not recommended) using:\n&lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/treysaddler/scholaricons/css/scholaricons.min.css\"&gt;\nCall the icons in the same way as you would using Font Awesome, but replacing fa with si. For example:\n&lt;i class=\"si si-google-scholar-square si-3x\"&gt;&lt;/i&gt;\nNote: Each icon also has an associated -square icon to enable better integration with the square Font Awesome icons."
+  },
+  {
+    "objectID": "index.html#with-font-building-apps",
+    "href": "index.html#with-font-building-apps",
+    "title": "Scholaricons",
+    "section": "With font building apps",
+    "text": "With font building apps\nTODO: The academicons.svg font file can be readily imported into most font building apps, allowing you to merge only the icons that you want into your personalised icon set."
+  },
+  {
+    "objectID": "index.html#desktop-publishing",
+    "href": "index.html#desktop-publishing",
+    "title": "Scholaricons",
+    "section": "Desktop publishing",
+    "text": "Desktop publishing\nThe font files can be installed locally on your system, allowing access to the icons through most publishing software."
+  },
+  {
+    "objectID": "index.html#scientific-publishing-todo",
+    "href": "index.html#scientific-publishing-todo",
+    "title": "Scholaricons",
+    "section": "Scientific publishing (TODO)",
+    "text": "Scientific publishing (TODO)\nTODO: You can access the full set of icons in LaTeX using the Academicons package.\nYou can also use the font in documents produced with Quarto using the Quarto Scholaricons extension."
+  },
+  {
+    "objectID": "index.html#requesting-new-icons",
+    "href": "index.html#requesting-new-icons",
+    "title": "Scholaricons",
+    "section": "Requesting new icons",
+    "text": "Requesting new icons\nNew icons can be requested by creating an issue. Before submitting a request, please check that the following conditions are satisfied:\n\nThe logo/icon requested is of appropriate dimensions (roughly square).\n\nIf that doesn’t exist, then there’s really not much that can be done, and the request will have to be ignored until such time that a (squarish) logo/icon can be provided.\n\nAn icon of appropriate resolution can be provided or linked to.\n\nThe provided file must be a vector file (e.g. SVG, EPS, AI) or a PDF with the vector file embedded.\nThese files are all very easy to work with, and result in the most faithful reproductions of the icon.\nI don’t have time to convert high resolution raster images (e.g. JPEG, PNG, GIF), so any requests that aren’t in a vector format will be closed.\n\nThe icon can be reduced to monochrome.\n\nThis is one of the basic requirements of a versatile icon, but it is often overlooked when icons are made by people who are not professional designers. Academia is full of unprofessional designers, and it is sometimes the case that a logo relies entirely on the use of different colours.\nIn certain cases we can be creative (see the dblp logo), but more often than not it will be impossible to create a monochrome version of the icon. Feel free to make the request, but it will probably be ignored if an alternate logo cannot be found."
+  },
+  {
+    "objectID": "index.html#building-assets",
+    "href": "index.html#building-assets",
+    "title": "Scholaricons",
+    "section": "Building assets",
+    "text": "Building assets\nTODO: Add instructions for building the font and CSS/LESS/SASS files from source."
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Scholaricons",
+    "section": "License",
+    "text": "License\n\nThe Scholaricons font is licensed under the SIL OFL 1.1:\n\nhttp://scripts.sil.org/OFL\n\nScholaricons CSS, LESS, and SASS files are licensed under the MIT License:\n\nhttp://opensource.org/licenses/mit-license.html\n\nThe Scholaricons documentation is licensed under the CC BY 3.0 License:\n\nhttp://creativecommons.org/licenses/by/3.0/"
+  },
+  {
+    "objectID": "index.html#author",
+    "href": "index.html#author",
+    "title": "Scholaricons",
+    "section": "Author",
+    "text": "Author\n\nGitHub: https://github.com/treysaddler\nWeb: https://treysaddler.com"
+  },
+  {
+    "objectID": "requested.html",
+    "href": "requested.html",
+    "title": "Requested Icons",
+    "section": "",
+    "text": "These are icons that have been requested."
+  },
+  {
+    "objectID": "requested.html#additional-work-required",
+    "href": "requested.html#additional-work-required",
+    "title": "Requested Icons",
+    "section": "Additional Work Required",
+    "text": "Additional Work Required\n\nName: OSF Preregistered+\n\nOrganization: \nWebsite: \nDescription:\nNotes: https://osf.io/tvyxz/ All the icons are in an EPS file at https://osf.io/5fghy, including some Preregistered+ variants such as Preregistered+ TC. However, Preregistered+ alone is not in the EPS file. Bitmaps are available at https://osf.io/t5nuj and https://osf.io/2qcpx.\n\nhttps://github.com/jpswalsh/academicons/issues/221\n\n\nName: medRxiv\n\nOrganization: \nWebsite: medRxiv\nDescription: Preprint server (sister service to bioRxiv) for health sciences.\nNotes: No SVG found, might need to convert\n\nhttps://github.com/jpswalsh/academicons/issues/224\n\n\nName: EndNote\n\nOrganization: Clarivate\nWebsite: EndNote Homepage\nDescription: EndNote is a paid citation manager from Clarivate.\nNotes: https://github.com/jpswalsh/academicons/issues/250\n\nNo SVG found, might need to convert\n\n\n\nName: Credly\n\nOrganization: \nWebsite: Credly Acclaim\nDescription:\nNotes: Need to find the SVG"
+  },
+  {
+    "objectID": "icons.html",
+    "href": "icons.html",
+    "title": "Icon Information",
+    "section": "",
+    "text": "Name: Academia.edu\n\nWebsite: Academia.edu\nDescription: Academia.edu is a commercial platform for sharing academic research that is uploaded and distributed by researchers from around the world.\nNotes: https://en.wikipedia.org/wiki/Academia.edu\nIcon: academia.svg"
+  }
+]
