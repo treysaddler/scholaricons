@@ -22,11 +22,16 @@ jobs:
           ruby-version: '3.2'
 
       - name: Install FontCustom
+        run: gem install fontcustom
+
+      - name: Patch FontCustom for Ruby 3.2
         run: |
-          gem install fontcustom
           # Fix for Ruby 3.2+ where File.exists? is removed
-          GEM_LIB_PATH=$(dirname $(gem which fontcustom))
-          find "$GEM_LIB_PATH" -name "*.rb" -exec sed -i 's/File.exists?/File.exist?/g' {} +
+          GEM_PATH=$(gem which fontcustom)
+          echo "Found fontcustom at: $GEM_PATH"
+          GEM_LIB_DIR=$(dirname "$GEM_PATH")
+          echo "Patching files in: $GEM_LIB_DIR"
+          find "$GEM_LIB_DIR" -name "*.rb" -print0 | xargs -0 sed -i 's/File.exists?/File.exist?/g'
 
       - name: Compile Fonts
         run: fontcustom compile
