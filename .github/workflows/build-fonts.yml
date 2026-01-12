@@ -19,10 +19,14 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: '3.2'
 
       - name: Install FontCustom
-        run: gem install fontcustom
+        run: |
+          gem install fontcustom
+          # Fix for Ruby 3.2+ where File.exists? is removed
+          OPTIONS_FILE=$(gem which fontcustom | sed 's/fontcustom.rb/fontcustom\/options.rb/')
+          sed -i 's/File.exists?/File.exist?/g' "$OPTIONS_FILE"
 
       - name: Compile Fonts
         run: fontcustom compile
