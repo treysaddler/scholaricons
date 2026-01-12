@@ -204,3 +204,22 @@ These are icons that have been requested.
   - **Website:** [https://www.datacamp.com/](https://www.datacamp.com/)
   - **Description:** DataCamp provides professional credentials for technical skills, and it'd be nice to have this icon available for resumes and the like since FontAwesome currently doesn't support it.
   - **Notes:** <https://github.com/jpswalsh/academicons/issues/195>
+
+- **Name:** Canvas (Instructure)
+  - **Organization:** []()
+  - **Website:** []()
+  - **Description:** Canvas is a commonly used LMS and the icon would be useful for course websites.
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/194>
+    - The branding guide originally listed is now gone, will require more searching
+
+- **Name:** Quarto
+  - **Organization:** [Posit](https://posit.co/)
+  - **Website:** [Quarto](https://quarto.org/)
+  - **Description:** Quarto is an open-source scientific and technical publishing system.
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/190>
+
+- **Name:** 
+  - **Organization:** []()
+  - **Website:** []()
+  - **Description:** 
+  - **Notes:** 
