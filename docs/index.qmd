@@ -1,0 +1,89 @@
+---
+title: "Scholaricons"
+---
+
+## What is Scholaricons?
+
+Academicons is a specialist icon font for academics. It contains icons for websites and organisations related to academia that are often missing from mainstream font packages. It can be used by itself, but its primary purpose is to be used as a supplementary package alongside a larger icon set.
+
+**All product names, logos, and brands are the property of their respective owners. Use of these names, logos, and brands does not imply endorsement.**
+
+## How do I use it?
+
+### Alongside Font Awesome
+
+Scholaricons was originally built as a supplement to [Font Awesome 5](https://github.com/FortAwesome/Font-Awesome), so the two fonts intentionally share the same metrics. You can [style](/scholaricons/usage) the icons using Font Awesome CSS controls.
+
+There are two ways to install Scholaricons on your site. The most reliable way is to place the `fonts` and `css` folders on your server and link to the `scholaricons.css` stylesheet by adding the following to the page header:
+
+```
+<link rel="stylesheet" href="/path/to/folder/css/scholaricons.min.css"/>
+```
+
+Alternatively, use the jsdelivr CDN to call the most recent version of Scholaricons from the content distribution network.
+
+### Load Academicons v1 (latest release in the 1.x.x range; recommended):
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/treysaddler/scholaricons@1/css/scholaricons.min.css">
+```
+
+Or get the latest version (not recommended) using:
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/treysaddler/scholaricons/css/scholaricons.min.css">
+```
+
+Call the icons in the same way as you would using Font Awesome, but replacing `fa` with `si`. For example:
+
+```
+<i class="si si-google-scholar-square si-3x"></i>
+```
+
+**Note:** Each icon also has an associated `-square` icon to enable better integration with the square Font Awesome icons.
+
+## With font building apps
+
+TODO: The `academicons.svg` font file can be readily imported into most font building apps, allowing you to merge only the icons that you want into your personalised icon set.
+
+## Desktop publishing
+
+The font files can be installed locally on your system, allowing access to the icons through most publishing software.
+
+## Scientific publishing (TODO)
+
+TODO: You can access the full set of icons in LaTeX using the [Academicons package](http://www.ctan.org/pkg/academicons).
+
+You can also use the font in documents produced with Quarto using the [Quarto Scholaricons extension](https://github.com/treysaddler/quarto-scholaricons).
+
+## Requesting new icons
+
+New icons can be requested by [creating an issue](https://github.com/treysaddler/scholaricons/issues). Before submitting a request, please check that the following conditions are satisfied:
+
+- The logo/icon requested is of **appropriate dimensions** (roughly square).
+  - If that doesn't exist, then there's really not much that can be done, and the request will have to be ignored until such time that a (squarish) logo/icon can be provided.
+- An icon of **appropriate resolution** can be provided or linked to.
+  - The provided file must be a **vector file** (*e.g.* SVG, EPS, AI) or a PDF with the vector file embedded.
+  - These files are all very easy to work with, and result in the most faithful reproductions of the icon.
+  - I don't have time to convert high resolution raster images (*e.g.* JPEG, PNG, GIF), so any requests that aren't in a vector format will be closed.
+- The icon can be **reduced to monochrome**.
+  - This is one of the basic requirements of a versatile icon, but it is often overlooked when icons are made by people who are not professional designers. Academia is full of unprofessional designers, and it is sometimes the case that a logo relies entirely on the use of different colours.
+  - In certain cases we can be creative (see the dblp logo), but more often than not it will be impossible to create a monochrome version of the icon. Feel free to make the request, but it will probably be ignored if an alternate logo cannot be found.
+
+## Building assets
+
+TODO: Add instructions for building the font and CSS/LESS/SASS files from source.
+
+## License
+
+- The Scholaricons font is licensed under the SIL OFL 1.1:
+  - [http://scripts.sil.org/OFL](http://scripts.sil.org/OFL)
+- Scholaricons CSS, LESS, and SASS files are licensed under the MIT License:
+  - [http://opensource.org/licenses/mit-license.html](http://opensource.org/licenses/mit-license.html)
+- The Scholaricons documentation is licensed under the CC BY 3.0 License:
+  - [http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/)
+
+## Author
+
+- GitHub: [https://github.com/treysaddler](https://github.com/treysaddler)
+- Web: [https://treysaddler.com](https://treysaddler.com)

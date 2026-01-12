@@ -1,0 +1,22 @@
+project:
+  type: website
+  title: "Scholaricons"
+  output-dir: ../_site
+
+website:
+  title: "Scholaricons"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: icons.qmd
+        text: Icons
+    right:
+      - icon: github
+        href: https://github.com/treysaddler/scholaricons
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

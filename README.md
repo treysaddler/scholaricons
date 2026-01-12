@@ -1,6 +1,8 @@
 # What is Scholaricons?
 
-Scholaricons is a specialist icon font for academics. It is forked from [Academicons](https://github.com/jpswalsh/academicons) by [James Walsh](https://github.com/jpswalsh).
+Scholaricons is a specialist icon font for academics. It is forked from [Academicons](https://github.com/jpswalsh/academicons) by [James Walsh](https://github.com/jpswalsh). It also includes icons from [Academmunicons](https://github.com/twardoch/academmunicons-font).
+
+**All product names, logos, and brands are the property of their respective owners. Use of these names, logos, and brands does not imply endorsement.**
 
 Scholaricons contains icons for tools, websites, and organisations related to academia that are often missing from mainstream font packages. It can be used by itself, but its primary purpose is to be used as a supplementary package alongside a larger icon set. Go to [GitHub Pages](http://treysaddler.github.io/scholaricons) to view the full icon set along with instructions for their use.
 
