@@ -1,6 +1,7 @@
 name: Build Scholaricons JSON
 on:
   push:
+    branches: master
     paths:
       - 'svg/**'
       - 'build-icons.js'

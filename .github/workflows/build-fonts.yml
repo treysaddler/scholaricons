@@ -1,6 +1,7 @@
 name: Build Scholaricons Fonts
 on:
   push:
+    branches: master
     paths:
       - 'svg/monochrome/**'
       - 'fontcustom.yml'
