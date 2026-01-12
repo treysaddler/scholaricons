@@ -153,3 +153,54 @@ These are icons that have been requested.
   - **Website:** [Credly Acclaim](https://info.credly.com/product/acclaim)
   - **Description:** 
   - **Notes:** Need to find the SVG
+
+- **Name:** VDE
+  - **Organization:** []()
+  - **Website:** [VDE](https://www.vde.com/)
+  - **Description:** VDE ist the German equivalent to IEEE which is already in the database. VDE is active in science, standards, and testing. Many (electrical) engineering standards are issued by VDE, as well as whitepapers on emerging technologies.
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/210>
+
+- **Name:** Huggingface
+  - **Organization:** []()
+  - **Website:** [Huggingface.co](https://huggingface.co)
+  - **Description:** Massive repository for AI models, including hosted ML spaces. A pro icon in the fontawesome library is similar, but not the same.
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/209>
+
+- **Name:** IEEE Antennas and Propagation Society (APS)
+  - **Organization:** []()
+  - **Website:** [https://ieeeaps.org/](https://ieeeaps.org/)
+  - **Description:** APS is an academic society like its parent IEEE and publishes papers, makes conferences and you can join it as a member.
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/207>
+
+- **Name:** GND
+  - **Organization:** []()
+  - **Website:** [https://gnd.network/](https://gnd.network/)
+  - **Description:** The Integrated Authority File (GND) is a service facilitating the collaborative use and administration of authority data. These authority data represent and describe entities, i.e. persons, corporate bodies, conferences and events, geographic entities, topics and works relating to cultural and academic collections. Libraries in particular use the GND to catalogue publications. However, archives, museums, cultural and academic institutions, and researchers involved in research projects are also increasingly working with the GND. Authority data make cataloguing easier, offer definitive search entries and forge links between different information resources.
+    - Every entity in the GND features a unique and stable identifier (GND ID). This makes it possible to link the authority data with both each other and external data sets and web resources. This results in a cross-organisational, machine-readable data network.
+    - More information about the GND at https://gnd.network
+    - (above information from: https://www.dnb.de/EN/Professionell/Standardisierung/GND/gnd_node.html)
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/204>
+
+- **Name:** GrabCAD
+  - **Organization:** []()
+  - **Website:** [https://grabcad.com/](https://grabcad.com/)
+  - **Description:** GrabCAD is a leading file sharing platform for engineers. It open sourcing of cad files and encourages cooperation. Over this side engineers can display their work and skills. The side also has an inbuilt freelancing system.
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/203>
+
+- **Name:** Bookbub
+  - **Organization:** []()
+  - **Website:** [https://bookbub.com/](https://bookbub.com/)
+  - **Description:** Bookhub is a platform that helps authors promote their books. Certainly not relevant for all academics, but it could be for those who are (frequently) writing books for non-academics. It offers authors the possibility to make a public profile, e.g. https://www.bookbub.com/profile/debbie-macomber?list=author_books.
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/199>
+
+- **Name:** zbMATH (AKA Zentralblatt)
+  - **Organization:** []()
+  - **Website:** [https://zbmath.org/](https://zbmath.org/)
+  - **Description:** Second most popular math publications database.
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/197>
+
+- **Name:** DataCamp
+  - **Organization:** []()
+  - **Website:** [https://www.datacamp.com/](https://www.datacamp.com/)
+  - **Description:** DataCamp provides professional credentials for technical skills, and it'd be nice to have this icon available for resumes and the like since FontAwesome currently doesn't support it.
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/195>
