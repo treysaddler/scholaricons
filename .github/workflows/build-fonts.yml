@@ -25,8 +25,8 @@ jobs:
         run: |
           gem install fontcustom
           # Fix for Ruby 3.2+ where File.exists? is removed
-          OPTIONS_FILE=$(gem which fontcustom | sed 's/fontcustom.rb/fontcustom\/options.rb/')
-          sed -i 's/File.exists?/File.exist?/g' "$OPTIONS_FILE"
+          GEM_LIB_PATH=$(dirname $(gem which fontcustom))
+          find "$GEM_LIB_PATH" -name "*.rb" -exec sed -i 's/File.exists?/File.exist?/g' {} +
 
       - name: Compile Fonts
         run: fontcustom compile
