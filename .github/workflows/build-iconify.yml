@@ -1,0 +1,29 @@
+name: Build Scholaricons JSON
+on:
+  push:
+    paths:
+      - 'svg/**'
+      - 'build-icons.js'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install @iconify/tools
+
+      - name: Run Build Script
+        run: node build-icons.js
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update scholaricons.json collection"
+          file_pattern: 'dist/scholaricons.json'
