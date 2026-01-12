@@ -5,6 +5,7 @@ on:
     paths:
       - 'svg/monochrome/**'
       - 'fontcustom.yml'
+      - '.github/workflows/build-fonts.yml'
 jobs:
   build:
     runs-on: ubuntu-latest
