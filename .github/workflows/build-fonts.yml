@@ -25,7 +25,7 @@ jobs:
       - name: Install FontCustom
         run: gem install fontcustom
 
-      - name: Patch FontCustom for Ruby 3.2
+      - name: Patch FontCustom
         run: |
           # Fix for Ruby 3.2+ where File.exists? is removed
           GEM_PATH=$(gem which fontcustom)
@@ -33,6 +33,11 @@ jobs:
           GEM_LIB_DIR=$(dirname "$GEM_PATH")
           echo "Patching files in: $GEM_LIB_DIR"
           find "$GEM_LIB_DIR" -name "*.rb" -print0 | xargs -0 sed -i 's/File.exists?/File.exist?/g'
+          
+          # Fix for FontForge/Python TypeError: 'float' object cannot be interpreted as an integer
+          GENERATE_SCRIPT="$GEM_LIB_DIR/fontcustom/scripts/generate.py"
+          echo "Patching generate.py at: $GENERATE_SCRIPT"
+          sed -i 's/glyph.left_side_bearing = glyph.left_side_bearing - shift/glyph.left_side_bearing = int(glyph.left_side_bearing - shift)/' "$GENERATE_SCRIPT"
 
       - name: Compile Fonts
         run: fontcustom compile --debug
