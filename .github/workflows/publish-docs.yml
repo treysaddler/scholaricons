@@ -1,6 +1,8 @@
 on:
   push:
     branches: master
+    paths:
+      - 'docs/**'
 
 name: Publish to GitHub Pages (and render)
 

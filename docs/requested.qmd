@@ -218,8 +218,8 @@ These are icons that have been requested.
   - **Description:** Quarto is an open-source scientific and technical publishing system.
   - **Notes:** <https://github.com/jpswalsh/academicons/issues/190>
 
-- **Name:** 
+- **Name:** Readcube
   - **Organization:** []()
-  - **Website:** []()
-  - **Description:** 
-  - **Notes:** 
+  - **Website:** [https://www.readcube.com/](https://www.readcube.com/)
+  - **Description:** This is the website Springer and Wiley use to allow free sharing of research papers
+  - **Notes:** <https://github.com/jpswalsh/academicons/issues/189>

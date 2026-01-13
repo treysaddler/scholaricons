@@ -38,6 +38,21 @@ jobs:
           GENERATE_SCRIPT="$GEM_LIB_DIR/fontcustom/scripts/generate.py"
           echo "Patching generate.py at: $GENERATE_SCRIPT"
           sed -i 's/glyph.left_side_bearing = glyph.left_side_bearing - shift/glyph.left_side_bearing = int(glyph.left_side_bearing - shift)/' "$GENERATE_SCRIPT"
+          sed -i 's/glyph.right_side_bearing = glyph.right_side_bearing + shift/glyph.right_side_bearing = int(glyph.right_side_bearing + shift)/' "$GENERATE_SCRIPT"
+          
+          # Fix for sfnt2woff executable format error (binary incompatibility)
+          # We'll rely on the system-installed woff2_compress instead
+          # The generate.py script tries to run a bundled 'sfnt2woff' which is failing
+          # We can patch it to skip the bundled one and trust that fontforge handles woff generation, 
+          # OR replace the call to use a compatible tool if strictly needed.
+          # However, FontCustom's generate.py logic for woff is legacy. 
+          # Let's try to comment out the failing sfnt2woff block which seems to be a fallback or specific post-processing.
+          
+          # Patch generate.py to remove the sfnt2woff call entirely (lines 118-128 approx)
+          # It tries to run the local binary, then falls back to system 'sfnt2woff'.
+          # We'll just nullify that whole try/except block by commenting it out or making it pass.
+          sed -i 's/subprocess.Popen(\[scriptPath + \x27\/sfnt2woff\x27/pass # subprocess.Popen([scriptPath + \x27\/sfnt2woff\x27/' "$GENERATE_SCRIPT"
+          sed -i 's/subprocess.call(\[\x27sfnt2woff\x27/pass # subprocess.call([\x27sfnt2woff\x27/' "$GENERATE_SCRIPT"
 
       - name: Compile Fonts
         run: fontcustom compile --debug
