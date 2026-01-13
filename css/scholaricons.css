@@ -1,573 +1,368 @@
 /*
- *  Academicons 1.0.0 by Trey Saddler (https://github.com/treysaddler)
- *  Square icons designed to be used alongside Font Awesome square icons - https://fortawesome.github.io/Font-Awesome/
- *  Licenses - Font: SIL OFL 1.1, CSS: MIT License
- */
+  Icon Font: scholaricons
+*/
+
 @font-face {
-    font-family: 'Scholaricons';
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src:url('../fonts/scholaricons.eot');
-    src:url('../fonts/scholaricons.eot') format('embedded-opentype'),
-        url('../fonts/scholaricons.ttf') format('truetype'),
-        url('../fonts/scholaricons.woff') format('woff'),
-        url('../fonts/scholaricons.svg') format('svg');
+  font-family: "scholaricons";
+  src: url("../fonts/scholaricons.eot");
+  src: url("../fonts/scholaricons.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/scholaricons.woff2") format("woff2"),
+       url("../fonts/scholaricons.woff") format("woff"),
+       url("../fonts/scholaricons.ttf") format("truetype"),
+       url("../fonts/scholaricons.svg#scholaricons") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-.si {
-  font-family: 'Scholaricons';
-  font-weight: 400;
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "scholaricons";
+    src: url("../fonts/scholaricons.svg#scholaricons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.sci-academia:before,
+.sci-academia-square:before,
+.sci-acm:before,
+.sci-acm-square:before,
+.sci-acmdl:before,
+.sci-acmdl-square:before,
+.sci-ads:before,
+.sci-ads-square:before,
+.sci-africarxiv:before,
+.sci-africarxiv-square:before,
+.sci-archive:before,
+.sci-archive-square:before,
+.sci-arxiv:before,
+.sci-arxiv-square:before,
+.sci-biorxiv:before,
+.sci-biorxiv-square:before,
+.sci-ceur:before,
+.sci-ceur-square:before,
+.sci-ciencia-vitae:before,
+.sci-ciencia-vitae-square:before,
+.sci-clarivate:before,
+.sci-clarivate-square:before,
+.sci-closed-access:before,
+.sci-closed-access-square:before,
+.sci-conversation:before,
+.sci-conversation-square:before,
+.sci-coursera:before,
+.sci-coursera-square:before,
+.sci-crossref:before,
+.sci-crossref-square:before,
+.sci-cv:before,
+.sci-cv-square:before,
+.sci-datacite:before,
+.sci-datacite-square:before,
+.sci-dataverse:before,
+.sci-dataverse-square:before,
+.sci-dblp:before,
+.sci-dblp-square:before,
+.sci-depsy:before,
+.sci-depsy-square:before,
+.sci-doi:before,
+.sci-doi-square:before,
+.sci-dryad:before,
+.sci-dryad-square:before,
+.sci-ecoevorxiv:before,
+.sci-elsevier:before,
+.sci-elsevier-square:before,
+.sci-figshare:before,
+.sci-figshare-square:before,
+.sci-google-scholar:before,
+.sci-google-scholar-square:before,
+.sci-grabcad:before,
+.sci-hal:before,
+.sci-hal-square:before,
+.sci-harvard-catalyst:before,
+.sci-huggingface:before,
+.sci-hypothesis:before,
+.sci-hypothesis-square:before,
+.sci-ideas-repec:before,
+.sci-ideas-repec-square:before,
+.sci-ieee:before,
+.sci-ieee-square:before,
+.sci-impactstory:before,
+.sci-impactstory-square:before,
+.sci-inaturalist:before,
+.sci-inaturalist-square:before,
+.sci-inpn:before,
+.sci-inpn-square:before,
+.sci-inspire:before,
+.sci-inspire-square:before,
+.sci-isidore:before,
+.sci-isidore-square:before,
+.sci-isni:before,
+.sci-isni-square:before,
+.sci-jstor:before,
+.sci-jstor-square:before,
+.sci-lattes:before,
+.sci-lattes-square:before,
+.sci-mathoverflow:before,
+.sci-mathoverflow-square:before,
+.sci-mendeley:before,
+.sci-mendeley-square:before,
+.sci-moodle:before,
+.sci-moodle-square:before,
+.sci-mtmt:before,
+.sci-mtmt-square:before,
+.sci-nakala:before,
+.sci-nakala-square:before,
+.sci-obp:before,
+.sci-obp-square:before,
+.sci-open-access:before,
+.sci-open-access-square:before,
+.sci-open-data:before,
+.sci-open-data-square:before,
+.sci-open-materials:before,
+.sci-open-materials-square:before,
+.sci-openedition:before,
+.sci-openedition-square:before,
+.sci-openreview:before,
+.sci-orcid:before,
+.sci-orcid-square:before,
+.sci-osf:before,
+.sci-osf-square:before,
+.sci-overleaf:before,
+.sci-overleaf-square:before,
+.sci-philpapers:before,
+.sci-philpapers-square:before,
+.sci-piazza:before,
+.sci-piazza-square:before,
+.sci-preregistered:before,
+.sci-preregistered-de:before,
+.sci-preregistered-de-plus:before,
+.sci-preregistered-de-plus-square:before,
+.sci-preregistered-de-square:before,
+.sci-preregistered-de-tc:before,
+.sci-preregistered-de-tc-plus:before,
+.sci-preregistered-de-tc-plus-square:before,
+.sci-preregistered-de-tc-square:before,
+.sci-preregistered-square:before,
+.sci-preregistered-tc:before,
+.sci-preregistered-tc-plus:before,
+.sci-preregistered-tc-plus-square:before,
+.sci-preregistered-tc-square:before,
+.sci-protocols:before,
+.sci-protocols-square:before,
+.sci-psyarxiv:before,
+.sci-psyarxiv-square:before,
+.sci-publons:before,
+.sci-publons-square:before,
+.sci-pubmed:before,
+.sci-pubmed-square:before,
+.sci-pubpeer:before,
+.sci-pubpeer-square:before,
+.sci-readcube:before,
+.sci-researcherid:before,
+.sci-researcherid-square:before,
+.sci-researchgate:before,
+.sci-researchgate-square:before,
+.sci-ror:before,
+.sci-ror-square:before,
+.sci-sci-hub:before,
+.sci-sci-hub-square:before,
+.sci-scirate:before,
+.sci-scirate-square:before,
+.sci-scopus:before,
+.sci-scopus-square:before,
+.sci-seamless-access:before,
+.sci-semantic-scholar:before,
+.sci-semantic-scholar-square:before,
+.sci-springer:before,
+.sci-springer-square:before,
+.sci-ssrn:before,
+.sci-ssrn-square:before,
+.sci-stackoverflow:before,
+.sci-stackoverflow-square:before,
+.sci-viaf:before,
+.sci-viaf-square:before,
+.sci-wikipedia-library:before,
+.sci-wiley:before,
+.sci-wiley-square:before,
+.sci-zenodo:before,
+.sci-zenodo-square:before,
+.sci-zotero:before,
+.sci-zotero-square:before {
+  display: inline-block;
+  font-family: "scholaricons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-.si-academia:before {
-  content: "\e9af";
-}
-.si-academia-square:before {
-  content: "\e93d";
-}
-.si-acclaim:before {
-  content: "\e92e";
-}
-.si-acclaim-square:before {
-  content: "\e93a";
-}
-.si-acm:before {
-  content: "\e93c";
-}
-.si-acm-square:before {
-  content: "\e95d";
-}
-.si-acmdl:before {
-  content: "\e96a";
-}
-.si-acmdl-square:before {
-  content: "\e9d3";
-}
-.si-ads:before {
-  content: "\e9cb";
-}
-.si-ads-square:before {
-  content: "\e94a";
-}
-.si-africarxiv:before {
-  content: "\e91b";
-}
-.si-africarxiv-square:before {
-  content: "\e90b";
-}
-.si-archive:before {
-  content: "\e955";
-}
-.si-archive-square:before {
-  content: "\e956";
-}
-.si-arxiv:before {
-  content: "\e974";
-}
-.si-arxiv-square:before {
-  content: "\e9a6";
-}
-.si-biorxiv:before {
-  content: "\e9a2";
-}
-.si-biorxiv-square:before {
-  content: "\e98b";
-}
-.si-ceur:before {
-  content: "\e96d";
-}
-.si-ceur-square:before {
-  content: "\e92f";
-}
-.si-ciencia-vitae:before {
-  content: "\e912";
-}
-.si-ciencia-vitae-square:before {
-  content: "\e913";
-}
-.si-clarivate:before {
-  content: "\e924";
-}
-.si-clarivate-square:before {
-  content: "\e925";
-}
-.si-closed-access:before {
-  content: "\e942";
-}
-.si-closed-access-square:before {
-  content: "\e943";
-}
-.si-conversation:before {
-  content: "\e94c";
-}
-.si-conversation-square:before {
-  content: "\e915";
-}
-.si-coursera:before {
-  content: "\e95f";
-}
-.si-coursera-square:before {
-  content: "\e97f";
-}
-.si-crossref:before {
-  content: "\e918";
-}
-.si-crossref-square:before {
-  content: "\e919";
-}
-.si-cv:before {
-  content: "\e9a5";
-}
-.si-cv-square:before {
-  content: "\e90a";
-}
-.si-datacite:before {
-  content: "\e91c";
-}
-.si-datacite-square:before {
-  content: "\e91d";
-}
-.si-dataverse:before {
-  content: "\e9f7";
-}
-.si-dataverse-square:before {
-  content: "\e9e4";
-}
-.si-dblp:before {
-  content: "\e94f";
-}
-.si-dblp-square:before {
-  content: "\e93f";
-}
-.si-depsy:before {
-  content: "\e97a";
-}
-.si-depsy-square:before {
-  content: "\e94b";
-}
-.si-doi:before {
-  content: "\e97e";
-}
-.si-doi-square:before {
-  content: "\e98f";
-}
-.si-dryad:before {
-  content: "\e97c";
-}
-.si-dryad-square:before {
-  content: "\e98c";
-}
-.si-elsevier:before {
-  content: "\e961";
-}
-.si-elsevier-square:before {
-  content: "\e910";
-}
-.si-figshare:before {
-  content: "\e981";
-}
-.si-figshare-square:before {
-  content: "\e9e7";
-}
-.si-google-scholar:before {
-  content: "\e9d4";
-}
-.si-google-scholar-square:before {
-  content: "\e9f9";
-}
-.si-hal:before {
-  content: "\e92c";
-}
-.si-hal-square:before {
-  content: "\e92d";
-}
-.si-hypothesis:before {
-  content: "\e95a";
-}
-.si-hypothesis-square:before {
-  content: "\e95b";
-}
-.si-ideas-repec:before {
-  content: "\e9ed";
-}
-.si-ideas-repec-square:before {
-  content: "\e9f8";
-}
-.si-ieee:before {
-  content: "\e929";
-}
-.si-ieee-square:before {
-  content: "\e9b9";
-}
-.si-impactstory:before {
-  content: "\e9cf";
-}
-.si-impactstory-square:before {
-  content: "\e9aa";
-}
-.si-inaturalist:before {
-  content: "\e900";
-}
-.si-inaturalist-square:before {
-  content: "\e901";
-}
-.si-inpn:before {
-  content: "\e902";
-}
-.si-inpn-square:before {
-  content: "\e903";
-}
-.si-inspire:before {
-  content: "\e9e9";
-}
-.si-inspire-square:before {
-  content: "\e9fe";
-}
-.si-isidore:before {
-  content: "\e936";
-}
-.si-isidore-square:before {
-  content: "\e954";
-}
-.si-isni:before {
-  content: "\e957";
-}
-.si-isni-square:before {
-  content: "\e958";
-}
-.si-jstor:before {
-  content: "\e938";
-}
-.si-jstor-square:before {
-  content: "\e944";
-}
-.si-lattes:before {
-  content: "\e9b3";
-}
-.si-lattes-square:before {
-  content: "\e99c";
-}
-.si-mathoverflow:before {
-  content: "\e9f6";
-}
-.si-mathoverflow-square:before {
-  content: "\e97b";
-}
-.si-mendeley:before {
-  content: "\e9f0";
-}
-.si-mendeley-square:before {
-  content: "\e9f3";
-}
-.si-moodle:before {
-  content: "\e907";
-}
-.si-moodle-square:before {
-  content: "\e908";
-}
-.si-mtmt:before {
-  content: "\e950";
-}
-.si-mtmt-square:before {
-  content: "\e951";
-}
-.si-nakala:before {
-  content: "\e940";
-}
-.si-nakala-square:before {
-  content: "\e941";
-}
-.si-obp:before {
-  content: "\e92a";
-}
-.si-obp-square:before {
-  content: "\e92b";
-}
-.si-open-access:before {
-  content: "\e939";
-}
-.si-open-access-square:before {
-  content: "\e9f4";
-}
-.si-open-data:before {
-  content: "\e966";
-}
-.si-open-data-square:before {
-  content: "\e967";
-}
-.si-open-materials:before {
-  content: "\e968";
-}
-.si-open-materials-square:before {
-  content: "\e969";
-}
-.si-openedition:before {
-  content: "\e946";
-}
-.si-openedition-square:before {
-  content: "\e947";
-}
-.si-orcid:before {
-  content: "\e9d9";
-}
-.si-orcid-square:before {
-  content: "\e9c3";
-}
-.si-osf:before {
-  content: "\e9ef";
-}
-.si-osf-square:before {
-  content: "\e931";
-}
-.si-overleaf:before {
-  content: "\e914";
-}
-.si-overleaf-square:before {
-  content: "\e98d";
-}
-.si-philpapers:before {
-  content: "\e98a";
-}
-.si-philpapers-square:before {
-  content: "\e96f";
-}
-.si-piazza:before {
-  content: "\e99a";
-}
-.si-piazza-square:before {
-  content: "\e90c";
-}
-.si-preregistered:before {
-  content: "\e906";
-}
-.si-preregistered-square:before {
-  content: "\e96b";
-}
-.si-protocols:before {
-  content: "\e952";
-}
-.si-protocols-square:before {
-  content: "\e953";
-}
-.si-psyarxiv:before {
-  content: "\e90e";
-}
-.si-psyarxiv-square:before {
-  content: "\e90f";
-}
-.si-publons:before {
-  content: "\e937";
-}
-.si-publons-square:before {
-  content: "\e94e";
-}
-.si-pubmed:before {
-  content: "\e99f";
-}
-.si-pubmed-square:before {
-  content: "\e97d";
-}
-.si-pubpeer:before {
-  content: "\e922";
-}
-.si-pubpeer-square:before {
-  content: "\e923";
-}
-.si-researcherid:before {
-  content: "\e91a";
-}
-.si-researcherid-square:before {
-  content: "\e95c";
-}
-.si-researchgate:before {
-  content: "\e95e";
-}
-.si-researchgate-square:before {
-  content: "\e99e";
-}
-.si-ror:before {
-  content: "\e948";
-}
-.si-ror-square:before {
-  content: "\e949";
-}
-.si-sci-hub:before {
-  content: "\e959";
-}
-.si-sci-hub-square:before {
-  content: "\e905";
-}
-.si-scirate:before {
-  content: "\e98e";
-}
-.si-scirate-square:before {
-  content: "\e99d";
-}
-.si-scopus:before {
-  content: "\e91e";
-}
-.si-scopus-square:before {
-  content: "\e91f";
-}
-.si-semantic-scholar:before {
-  content: "\e96e";
-}
-.si-semantic-scholar-square:before {
-  content: "\e96c";
-}
-.si-springer:before {
-  content: "\e928";
-}
-.si-springer-square:before {
-  content: "\e99b";
-}
-.si-ssrn:before {
-  content: "\e916";
-}
-.si-ssrn-square:before {
-  content: "\e917";
-}
-.si-stackoverflow:before {
-  content: "\e920";
-}
-.si-stackoverflow-square:before {
-  content: "\e921";
-}
-.si-viaf:before {
-  content: "\e933";
-}
-.si-viaf-square:before {
-  content: "\e934";
-}
-.si-wiley:before {
-  content: "\e926";
-}
-.si-wiley-square:before {
-  content: "\e927";
-}
-.si-zenodo:before {
-  content: "\e911";
-}
-.si-zenodo-square:before {
-  content: "\e904";
-}
-.si-zotero:before {
-  content: "\e962";
-}
-.si-zotero-square:before {
-  content: "\e932";
-}
-/*  Duplication of the FontAwesome style classes using 'si' in place of 'fa'. */
-.si-lg {
-  font-size: 1.33333em;
-  line-height: 0.75em;
-  vertical-align: -.0667em;
-}
-.si-xs {
-  font-size: .75em;
-}
-.si-sm {
-  font-size: .875em;
+  font-smoothing: antialiased;
 }
 
-.si-1x {
-  font-size: 1em;
-}
-.si-2x {
-  font-size: 2em;
-}
-.si-3x {
-  font-size: 3em;
-}
-.si-4x {
-  font-size: 4em;
-}
-.si-5x {
-  font-size: 5em;
-}
-.si-6x {
-  font-size: 6em;
-}
-.si-7x {
-  font-size: 7em;
-}
-.si-8x {
-  font-size: 8em;
-}
-.si-9x {
-  font-size: 9em;
-}
-.si-10x {
-  font-size: 10em;
-}
-
-.si-fw {
-  text-align: center;
-  width: 1.25em;
-}
-
-.si-ul {
-  list-style-type: none;
-  margin-left: 2.5em;
-  padding-left: 0;
-}
-.si-ul > li {
-    position: relative;
-}
-.si-li {
-  left: -2em;
-  position: absolute;
-  text-align: center;
-  width: 2em;
-  line-height: inherit;
-}
-
-.si-border {
-border: solid 0.08em #eee;
-border-radius: .1em;
-  padding: .2em .25em .15em;
-}
-
-.si-pull-left {
-  float: left;
-}
-.si-pull-right {
-  float: right;
-}
-.si.si-pull-left {
-  margin-right: .3em;
-}
-.si.si-pull-right {
-  margin-right: .3em;
-}
-
-.si-stack {
-  display: inline-block;
-  height: 2em;
-  line-height: 2em;
-  position: relative;
-  vertical-align: middle;
-  width: 2.5em;
-}
-.si-stack-1x,
-.si-stack-2x {
-  left: 0;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-.si-stack-1x {
-  line-height: inherit;
-}
-.si-stack-2x {
-  font-size: 2em;
-}
-.si-inverse {
-  color: #fff;
-}
+.sci-academia:before { content: "\f100"; }
+.sci-academia-square:before { content: "\f101"; }
+.sci-acm:before { content: "\f102"; }
+.sci-acm-square:before { content: "\f103"; }
+.sci-acmdl:before { content: "\f104"; }
+.sci-acmdl-square:before { content: "\f105"; }
+.sci-ads:before { content: "\f106"; }
+.sci-ads-square:before { content: "\f107"; }
+.sci-africarxiv:before { content: "\f108"; }
+.sci-africarxiv-square:before { content: "\f109"; }
+.sci-archive:before { content: "\f10a"; }
+.sci-archive-square:before { content: "\f10b"; }
+.sci-arxiv:before { content: "\f10c"; }
+.sci-arxiv-square:before { content: "\f10d"; }
+.sci-biorxiv:before { content: "\f10e"; }
+.sci-biorxiv-square:before { content: "\f10f"; }
+.sci-ceur:before { content: "\f110"; }
+.sci-ceur-square:before { content: "\f111"; }
+.sci-ciencia-vitae:before { content: "\f112"; }
+.sci-ciencia-vitae-square:before { content: "\f113"; }
+.sci-clarivate:before { content: "\f114"; }
+.sci-clarivate-square:before { content: "\f115"; }
+.sci-closed-access:before { content: "\f116"; }
+.sci-closed-access-square:before { content: "\f117"; }
+.sci-conversation:before { content: "\f118"; }
+.sci-conversation-square:before { content: "\f119"; }
+.sci-coursera:before { content: "\f11a"; }
+.sci-coursera-square:before { content: "\f11b"; }
+.sci-crossref:before { content: "\f11c"; }
+.sci-crossref-square:before { content: "\f11d"; }
+.sci-cv:before { content: "\f11e"; }
+.sci-cv-square:before { content: "\f11f"; }
+.sci-datacite:before { content: "\f120"; }
+.sci-datacite-square:before { content: "\f121"; }
+.sci-dataverse:before { content: "\f122"; }
+.sci-dataverse-square:before { content: "\f123"; }
+.sci-dblp:before { content: "\f124"; }
+.sci-dblp-square:before { content: "\f125"; }
+.sci-depsy:before { content: "\f126"; }
+.sci-depsy-square:before { content: "\f127"; }
+.sci-doi:before { content: "\f128"; }
+.sci-doi-square:before { content: "\f129"; }
+.sci-dryad:before { content: "\f12a"; }
+.sci-dryad-square:before { content: "\f12b"; }
+.sci-ecoevorxiv:before { content: "\f12c"; }
+.sci-elsevier:before { content: "\f12d"; }
+.sci-elsevier-square:before { content: "\f12e"; }
+.sci-figshare:before { content: "\f12f"; }
+.sci-figshare-square:before { content: "\f130"; }
+.sci-google-scholar:before { content: "\f131"; }
+.sci-google-scholar-square:before { content: "\f132"; }
+.sci-grabcad:before { content: "\f133"; }
+.sci-hal:before { content: "\f134"; }
+.sci-hal-square:before { content: "\f135"; }
+.sci-harvard-catalyst:before { content: "\f136"; }
+.sci-huggingface:before { content: "\f137"; }
+.sci-hypothesis:before { content: "\f138"; }
+.sci-hypothesis-square:before { content: "\f139"; }
+.sci-ideas-repec:before { content: "\f13a"; }
+.sci-ideas-repec-square:before { content: "\f13b"; }
+.sci-ieee:before { content: "\f13c"; }
+.sci-ieee-square:before { content: "\f13d"; }
+.sci-impactstory:before { content: "\f13e"; }
+.sci-impactstory-square:before { content: "\f13f"; }
+.sci-inaturalist:before { content: "\f140"; }
+.sci-inaturalist-square:before { content: "\f141"; }
+.sci-inpn:before { content: "\f142"; }
+.sci-inpn-square:before { content: "\f143"; }
+.sci-inspire:before { content: "\f144"; }
+.sci-inspire-square:before { content: "\f145"; }
+.sci-isidore:before { content: "\f146"; }
+.sci-isidore-square:before { content: "\f147"; }
+.sci-isni:before { content: "\f148"; }
+.sci-isni-square:before { content: "\f149"; }
+.sci-jstor:before { content: "\f14a"; }
+.sci-jstor-square:before { content: "\f14b"; }
+.sci-lattes:before { content: "\f14c"; }
+.sci-lattes-square:before { content: "\f14d"; }
+.sci-mathoverflow:before { content: "\f14e"; }
+.sci-mathoverflow-square:before { content: "\f14f"; }
+.sci-mendeley:before { content: "\f150"; }
+.sci-mendeley-square:before { content: "\f151"; }
+.sci-moodle:before { content: "\f152"; }
+.sci-moodle-square:before { content: "\f153"; }
+.sci-mtmt:before { content: "\f154"; }
+.sci-mtmt-square:before { content: "\f155"; }
+.sci-nakala:before { content: "\f156"; }
+.sci-nakala-square:before { content: "\f157"; }
+.sci-obp:before { content: "\f158"; }
+.sci-obp-square:before { content: "\f159"; }
+.sci-open-access:before { content: "\f15a"; }
+.sci-open-access-square:before { content: "\f15b"; }
+.sci-open-data:before { content: "\f15c"; }
+.sci-open-data-square:before { content: "\f15d"; }
+.sci-open-materials:before { content: "\f15e"; }
+.sci-open-materials-square:before { content: "\f15f"; }
+.sci-openedition:before { content: "\f160"; }
+.sci-openedition-square:before { content: "\f161"; }
+.sci-openreview:before { content: "\f162"; }
+.sci-orcid:before { content: "\f163"; }
+.sci-orcid-square:before { content: "\f164"; }
+.sci-osf:before { content: "\f165"; }
+.sci-osf-square:before { content: "\f166"; }
+.sci-overleaf:before { content: "\f167"; }
+.sci-overleaf-square:before { content: "\f168"; }
+.sci-philpapers:before { content: "\f169"; }
+.sci-philpapers-square:before { content: "\f16a"; }
+.sci-piazza:before { content: "\f16b"; }
+.sci-piazza-square:before { content: "\f16c"; }
+.sci-preregistered:before { content: "\f16d"; }
+.sci-preregistered-de:before { content: "\f16e"; }
+.sci-preregistered-de-plus:before { content: "\f16f"; }
+.sci-preregistered-de-plus-square:before { content: "\f170"; }
+.sci-preregistered-de-square:before { content: "\f171"; }
+.sci-preregistered-de-tc:before { content: "\f172"; }
+.sci-preregistered-de-tc-plus:before { content: "\f173"; }
+.sci-preregistered-de-tc-plus-square:before { content: "\f174"; }
+.sci-preregistered-de-tc-square:before { content: "\f175"; }
+.sci-preregistered-square:before { content: "\f176"; }
+.sci-preregistered-tc:before { content: "\f177"; }
+.sci-preregistered-tc-plus:before { content: "\f178"; }
+.sci-preregistered-tc-plus-square:before { content: "\f179"; }
+.sci-preregistered-tc-square:before { content: "\f17a"; }
+.sci-protocols:before { content: "\f17b"; }
+.sci-protocols-square:before { content: "\f17c"; }
+.sci-psyarxiv:before { content: "\f17d"; }
+.sci-psyarxiv-square:before { content: "\f17e"; }
+.sci-publons:before { content: "\f17f"; }
+.sci-publons-square:before { content: "\f180"; }
+.sci-pubmed:before { content: "\f181"; }
+.sci-pubmed-square:before { content: "\f182"; }
+.sci-pubpeer:before { content: "\f183"; }
+.sci-pubpeer-square:before { content: "\f184"; }
+.sci-readcube:before { content: "\f185"; }
+.sci-researcherid:before { content: "\f186"; }
+.sci-researcherid-square:before { content: "\f187"; }
+.sci-researchgate:before { content: "\f188"; }
+.sci-researchgate-square:before { content: "\f189"; }
+.sci-ror:before { content: "\f18a"; }
+.sci-ror-square:before { content: "\f18b"; }
+.sci-sci-hub:before { content: "\f18c"; }
+.sci-sci-hub-square:before { content: "\f18d"; }
+.sci-scirate:before { content: "\f18e"; }
+.sci-scirate-square:before { content: "\f18f"; }
+.sci-scopus:before { content: "\f190"; }
+.sci-scopus-square:before { content: "\f191"; }
+.sci-seamless-access:before { content: "\f192"; }
+.sci-semantic-scholar:before { content: "\f193"; }
+.sci-semantic-scholar-square:before { content: "\f194"; }
+.sci-springer:before { content: "\f195"; }
+.sci-springer-square:before { content: "\f196"; }
+.sci-ssrn:before { content: "\f197"; }
+.sci-ssrn-square:before { content: "\f198"; }
+.sci-stackoverflow:before { content: "\f199"; }
+.sci-stackoverflow-square:before { content: "\f19a"; }
+.sci-viaf:before { content: "\f19b"; }
+.sci-viaf-square:before { content: "\f19c"; }
+.sci-wikipedia-library:before { content: "\f19d"; }
+.sci-wiley:before { content: "\f19e"; }
+.sci-wiley-square:before { content: "\f19f"; }
+.sci-zenodo:before { content: "\f1a0"; }
+.sci-zenodo-square:before { content: "\f1a1"; }
+.sci-zotero:before { content: "\f1a2"; }
+.sci-zotero-square:before { content: "\f1a3"; }
