@@ -66,6 +66,9 @@ jobs:
       - name: Minify CSS
         run: cleancss -o css/scholaricons.min.css css/scholaricons.css
 
+      - name: Pull latest changes
+        run: git pull origin master --rebase --autostash
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
