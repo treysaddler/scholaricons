@@ -1,0 +1,36 @@
+/*
+  Icon Font: scholaricons
+  Version: 1.0.1
+*/
+@font-face {
+  font-family: "scholaricons";
+  src: url("../fonts/scholaricons.eot");
+  src: url("../fonts/scholaricons.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/scholaricons.woff2") format("woff2"),
+       url("../fonts/scholaricons.woff") format("woff"),
+       url("../fonts/scholaricons.ttf") format("truetype"),
+       url("../fonts/scholaricons.svg#scholaricons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sci:before {
+  display: inline-block;
+  font-family: "scholaricons";
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Fixed Width */
+.sci-fw:before {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+/* Glyph Classes */
+<% for @glyph in @glyphs %>
+.<%= css_prefix %>-<%= @glyph %>:before { content: "\<%= @codepoints[@glyph].toString(16) %>"; }
+<% end %>
